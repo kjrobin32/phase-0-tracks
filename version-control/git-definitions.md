@@ -3,7 +3,7 @@
 **Instructions: ** Define each of the following Git concepts.
 
 * What is version control?  Why is it useful?
-* Rersion control is where you have muliple version of the same code.  *It allows you to go through different version for historical data.
+* Version control is where you have muliple version of the same code.  *It allows you to go through different version for historical data.
 
 * What is a branch and why would you use one?
 
@@ -14,3 +14,5 @@
 * What is a merge conflict?
 
 *A merge conflict is when there changes made to a file that conflict.
+
+FIN
