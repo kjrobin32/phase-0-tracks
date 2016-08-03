@@ -1,0 +1,9 @@
+-push button in directon you want to go
+-wait for elevator door to open
+-when door opens enter elevator
+-turn toward the door
+-if the buttons are on the left
+		-press the floor you want to go to
+	-otherwise
+		- if buttons on the right
+			press floor you want to go to
