@@ -7,3 +7,29 @@
 	-otherwise
 		- if buttons on the right
 			press floor you want to go to
+		
+
+
+
+opening the door
+
+-take keys out of pocket
+-locate key on ring
+-if key is known
+	-find known keys
+	-put key in key hole
+	-turn key
+	-and open door
+	-walk in door
+-otherwise
+	-find a key
+	-put key in key whole
+	-turn key
+	-if key turns
+		-open door
+		-walk in
+		otherwise
+		-put key find another key
+		-put key in hole
+		-turn key
+		
