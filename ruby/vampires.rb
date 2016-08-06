@@ -1,11 +1,8 @@
 
-
-
 puts "how many employees do you want to do this for?"
 employees = gets.chomp
 employees = employees.to_i
-employees = n 
-while  employees >  n
+until  employees ==  0
 puts "what is your name?"
 	name = gets.chomp
 	if name = "Drake Cula" || "Tu Fang"
@@ -37,5 +34,6 @@ if (age)  && (food || plan) && (!sure)
 		puts "Definetely a vampire"
 	else
 		puts "results inconclusive"
-		employees +=1
-end
+	end
+		employees = employees- 1
+	end
