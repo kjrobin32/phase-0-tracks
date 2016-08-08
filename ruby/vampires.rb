@@ -44,9 +44,11 @@ puts "Would you like to enrol in the company's health plan?"
 vampire_data = nil
 if allergies == "sunshine" 
 	vampire_data = "probably a vampire"
-	elsif  sure == true
+	elsif  sure == true		
 	vampire_data = "definitely a vampire"
-	elsif (age && food) || (age && plan)
+	elsif age && (food || plan)
+	puts "probably not a vampire"
+	elsif (!age) && (!food) || (!plan)
 	vampire_data = "probably a vampire data"		
 	elsif (!age) && (!food) && (!plan) 
 		vampire_data = "almost certainly a vampire"	 			 		
