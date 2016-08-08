@@ -1,0 +1,26 @@
+header {
+	width: 100%;
+	background-color: purple;
+}
+
+footer {
+	width: 100%;
+	background-color: yellow;
+	text-align: center;
+	font-family: arial; 
+}
+
+.column-1 {
+	display: inline-block;
+	width: 50%;
+	background: teal;
+	color: pink;
+
+}
+.column-2 {
+	display: inline-block;
+	width: 50%;
+	background-color: orange;
+	vertical-align: text-top;
+	float: right;
+}
