@@ -39,3 +39,6 @@
 
 "How many times does the letter 'a' appear in this string?".count("a")
  => 4
+
+ "this will clear the string".clear
+ => 0
