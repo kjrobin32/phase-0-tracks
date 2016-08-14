@@ -43,7 +43,7 @@ correct = gets.chomp
 if 	correct == "none"	
 	client_details = true
 	puts "holla!"
-	elsif correct = "name" || "age" || "emails" || "children" || "phone" || "plan" || "team"
+	elsif (correct == "name") || "age" || "emails" || "children" || "phone" || "plan" || "team"
 	puts "enter"
 	else
 	puts "done"
