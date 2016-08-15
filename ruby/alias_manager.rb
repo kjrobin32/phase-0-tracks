@@ -27,7 +27,7 @@ else
 #puts name_vowels.gsub(/[bcdfghjklmnpqrstvwxyz]/,'b' => 'c', 'c' => 'd', 'd' => 'f', 'f' => 'g', 'g' => 'h', 'h' => 'j', 'j' => 'k', 'k' => 'l', 'l' => 'm', 'm' => 'n', 'n' => 'p', 'p' => 'q', 'q' => 'r', 'r' => 's', 's' => 't', 't' => 'v', 'v' => 'w', 'w' => 'x', 'x' => 'y', 'y' => 'z', 'z' => 'b')
 
 	final_name = name_vowels.gsub(/[bcdfghjklmnpqrstvwxyz]/,'b' => 'c', 'c' => 'd', 'd' => 'f', 'f' => 'g', 'g' => 'h', 'h' => 'j', 'j' => 'k', 'k' => 'l', 'l' => 'm', 'm' => 'n', 'n' => 'p', 'p' => 'q', 'q' => 'r', 'r' => 's', 's' => 't', 't' => 'v', 'v' => 'w', 'w' => 'x', 'x' => 'y', 'y' => 'z', 'z' => 'b')
-puts "#{name} you are now #{final_name.split.map(&:capitalize)*' '}!!!"
+puts "#{name} you are now #{final_name.split.map(&:capitalize)*' '}!!! Now get to the damn choooppaaa!!!"
 end
 #puts final_name.class
 #then swap
