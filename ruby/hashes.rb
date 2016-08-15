@@ -25,26 +25,30 @@ puts "please input name,age, email, number of children, phone number, if you lik
 	plan = gets.chomp 
 	puts "what is your favorite  sports team?"
 	team = gets.chomp
-client_details = {}
-client_details = {
-	:name => name,
-	:age => age,
-	:email => email,
-	:children => children,
-	:phone => phone,
-	:plan => plan,
-	:team => team,
-}
-puts "are client details correct?"
-puts client_details
 
-client_details = false
-correct = gets.chomp
-if 	correct == "none"	
+client_details = {
+	name: name,
+	age:age,
+	email: email,
+	children: children,
+	phone: phone,
+	plan: plan,
+	team: team,
+}
+
+puts client_details
+question_correct = false
+until client_details == true
+puts "If client details are correct enter yes otherwise create or change your details."
+puts client_details	
+question_correct = gets.chomp
+if 	question_correct == "yes"	
 	client_details = true
 	puts "holla!"
-	elsif (correct == "name") || "age" || "emails" || "children" || "phone" || "plan" || "team"
-	puts "enter"
-	else
-	puts "done"
+	else	(question_correct == "name" || "age" || "emails" || "children" || "phone" || "plan" || "team")
+	puts "please update #{question_correct}?"
+	client_details[question_correct.to_sym] = gets.chomp
+	puts client_details
+	client_details = true
+	end
 end
