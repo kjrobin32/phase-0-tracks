@@ -24,7 +24,6 @@
 #   end
 # end
 
-
 #it works
 # hfingerd = Puppy.new
 # hfingerd.fetch('ball')
@@ -44,7 +43,6 @@ class Bteam
 		start.times{|start|Bteam.new}
 	end
 end
-
 
 pointgaurd = Bteam.new
 pointgaurd.bottom(50)

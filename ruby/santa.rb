@@ -1,36 +1,50 @@
-class Santa
-	def initialize (gender, ethnicity)
-		@gender = gender
-		@ethnicity = ethnicity
-		reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
-		age = 0
-	def speak(ho)
-		puts "Ho, ho, ho! Haaaappy holidays!"
-	end
-	def eat_milk_and_cookies(cookie_type)
-		puts "#{cookie_type} was a good!"  
-	end
-	
-	end
+	class Santa
+		attr_accessor :gender, :ethnicity, :start
+		def initialize (gender, ethnicity, start)
+			@gender = gender
+			@ethnicity = ethnicity
+			@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+			age = 0
+			@start = start 
+			puts "dog"
+		end
+		def speak(ho)
+			puts "Ho, ho, ho! Haaaappy holidays!"
+		end
+		def eat_milk_and_cookies(cookie_type)
+			puts "#{cookie_type} was a good!"  
+		end
+		def celebrate_birthday(age)
+			puts age += age = 1
+		end
+		def get_mad_at(reindeer) 
+			#puts @reindeer_ranking
+
+			last = @reindeer_ranking.index(reindeer)
+			#puts last 
+			@reindeer_ranking = @reindeer_ranking.rotate(last)
+			#puts @reindeer_ranking		
+
+			# puts @reindeer = reindeer.to_i
+			# @reindeer_ranking[reindeer] = @reindeer_ranking[reindeer]
+			# puts reindeer.to_i
+			# @reindeer_ranking = reindeer.to_i.rotate[reindeer]
+			# puts @reindeer_ranking
+		end
+			def enthnicity
+			@age
+		end		
+		def age
+			@age
+		end
+		def bottom(start)
+		start.times{|start|Santa.new}
+		puts Santa.include
+		end
 end
 
-
-santas = []
-santas << Santa.new("agender", "black")
-santas << Santa.new("female", "Latino")
-santas << Santa.new("bigender", "white")
-santas << Santa.new("male", "Japanese")
-santas << Santa.new("female", "prefer not to say")
-santas << Santa.new("gender fluid", "Mystical Creature (unicorn)")
-santas << Santa.new("N/A", "N/A")
-
-
-class Reindeer
-  def initialize(name)
-    @name = name
-  end
-end
-
-reindeer = Reindeer.new("Blitzen")
-reindeer.name
-puts santas.inspect
+nsanta = Santa.new("male", "black", 4)
+# nsanta.bottom(4)
+# nsanta.celebrate_birthday(2)
+# nsanta.get_mad_at("Dancer")
+# nsanta.gender="male"
