@@ -9,9 +9,11 @@ class Soocer_ball
 	puts "what generation is your ball"
 	generation = gets.chomp
 	@generation = generation
+	ball = false
 	puts "@generation"
-		until generation == ("old school" || "new school" || modern) 
+		until 	generation == ("old school" || "new school" || modern) 
 		puts "try agian!"
+		ball = 
 	end
 	end
 end
