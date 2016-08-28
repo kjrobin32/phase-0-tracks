@@ -29,7 +29,7 @@ puts "what are your your first number, math sign, and second number?"
 		puts 'continue with math'
 	
 	end
-	calculate {|first, sign, second| p calculate(first, sign, second)}
+	calculate(first, sign, second).each {|first, sign, second| puts calculate(first, sign, second)}
 end
 
 
