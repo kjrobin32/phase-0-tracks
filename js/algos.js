@@ -5,34 +5,21 @@
 // reutrn the values of the longets array 
 //  
 
-// function compare(){
-// 	var phrases = [];
-// 	longWord = ""
-// 	console.log(phrases.push('bighat', 'smallcat', 'snack'));
-// 		for (var i = 0; phrases[i].length < phrases.length; i++){
-// 			for (k = i + 1; k < phrases.length; k++)  {
-// 				if (phrases[i] != phrases[k]){
-									
-// 									}
-// 			}
-// 		}	
-// 	return console.log(phrases[i])
-// }
-// compare()
-
-
-function compare(longWord){
-	var phrases = [];
+//
+function compare(phrases){
+	// var phrases = [];
 	var longWord = "";
 		for (var i = 0; i < phrases.length; i++) {
 			if (phrases[i].length > longWord.length) {
 				longWord = phrases[i]
 			}
-			phrases.push(longWord)
+			// phrases.push(longWord)
 		}
-	return phrases
+	return longWord
 }
-console.log(compare('bighat', 'smallcat', 'snack'))
+
+var words = ["bighat", "smallcat", "snack"]
+console.log(compare(words))
 
 // console.log(phrases[''].length)
 // phrases[i].length;
@@ -98,6 +85,8 @@ function randomWords(number){
 	return words
 }
 	
+
+
 console.log(randomWords(7))
 
-
+console.log(compare(randomWords(8)))
