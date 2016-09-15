@@ -33,7 +33,7 @@ opening the door
 		-put key in hole
 		-turn key
 	
-
+///////// this is the redo for door algorithm //////
 first put hands in pockets
 take keys out of pocket
 select a key
