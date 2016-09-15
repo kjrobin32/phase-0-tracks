@@ -32,4 +32,16 @@ opening the door
 		-put key find another key
 		-put key in hole
 		-turn key
-		
+	
+///////// this is the redo for door algorithm //////
+first put hands in pockets
+take keys out of pocket
+select a key
+until the key turns the lock
+select a key
+then turn the lock
+when the lock is turned
+use the knob or grip to open the door
+
+
+
