@@ -66,26 +66,24 @@ puts "What is your hamsters name?"
 name = gets.chomp
 
 
-
-
 loud = 0
 until loud.between?(1,10)
-puts "how loud is your hamster on a scale of 1-10?"	
-loud = gets.chomp.to_i
-if loud.between?(1,10)
+	puts "How loud is your hamster on a scale of 1-10?"	
+	loud = gets.chomp.to_i
+	if loud.between?(1,10)
 else
-	puts "please enter a number between 1-10"
+	puts "Please enter a number between 1-10"
 	loud != 0
 	end
 end
-puts "what colors is your hamster?"
-color = gets.chomp
 
+puts "What color is your hamster?"
+color = gets.chomp
 
 adoptable = false
 until adoptable == true
-puts "is your #{name} a good canidiate for adoption"
-adoption = gets.chomp
+	puts "Is your #{name} a good canidiate for adoption?"
+	adoption = gets.chomp
 	if adoption == "yes"
 		adoptable = true
 	elsif adoption == "no"
@@ -103,16 +101,23 @@ if old == ""
 		old = old
 	end
 
-puts  "Your hamsters #{name}"
+puts  "Thank you your interest in enroling #{name} intothe Hamster School"
+if old == nil
+	puts "If you dont know #{name}'s age. We will be forced to eat #{name} in 24 hours!!!"
+else
+	puts "#{name} is #{old} years old"
+end
 if loud < 4 && adoption == "yes"
 puts "#{name} is quiet and good. we will keep #{name}"
 elsif loud < 4 && adoption == "no"
 	puts "Because #{name} is quiet but bad. We can use him in the army!"
-elsif loud > 3 && loud < 7 && adoption == "yes"
-	puts "#{name} is makes some noise but seems good"
+elsif loud > 3 && loud < 8 && adoption == "yes"
+	puts "#{name} makes some noise but seems good.  We will se what we can do."
 else
-	puts "#{name}... thats a bad hamster. we will eat hamster"
+	puts "#{name}... #{name.upcase}!!!! thats a bad hamster. We will eat hamster"
 end
+
+
 
 # if adoptable == yes && loud < 7
 # 	puts "We will consider taking #{name} to the promise land"
