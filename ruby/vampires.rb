@@ -67,13 +67,20 @@
 
 puts "What is your age?"
 age = gets.chomp.to_i
-if age > 65
-	age = true
+
+if age < 65
+	youth = true
 else
-	age = false
+	youth = false
 end
+
 puts "Do you like garlic bread"
 garlic = gets.chomp
+if garlic == "yes"
+	food = true
+else
+	food = false
+end
 puts "Do you want health insurance?"
 health = gets.chomp
 if health == "yes"
@@ -82,4 +89,10 @@ else
 	insurance = false
 end
 
-puts age
+if youth && (food || insurance)
+	puts "Probably NOT a vampire"
+end
+
+p insurance
+p food
+p youth
