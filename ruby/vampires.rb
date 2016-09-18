@@ -100,18 +100,30 @@ until employees == 0
 	else
 		insurance = false
 	end
+
 	puts "Do you have any allergies?"
 	allergies = gets.chomp	
-	until allergies = 
-
-		if alergies = "sunshine"
-		"done"
-		puts "Please enter allergies"
-		allergies = gets.chomp
+	if allergies == "no"
+		else
+		allergy_input = false
+		until allergy_input == true
+			if allergies == "sunshine"
+				allergy_input = true
+			elsif allergies == "done"
+				allergy_input = true
+		else
+			puts "Please enter allergies"
+			allergies = gets.chomp
+			allergy_input = false
+		end
 	end
+end
+
 # driver code
 
-	if fangs 
+	if allergies == "sunshine"
+		puts "Probably a vampire."
+	elsif fangs 
 		puts "Definitely a vampire."
 	elsif youth && (bread || insurance)
 		puts "Probably NOT a vampire"
