@@ -96,13 +96,15 @@ end
 
 # driver code
 
-if name = "Drake Cula" || "Tu Fang"
-puts "Definitely a vampire."
-	youth && (bread || insurance)
+if name == "Drake Cula"
+	puts "Definitely a vampire."
+elsif name == "Tu Fang"
+	puts "Definitely a vampire."
+elsif youth && (bread || insurance)
 	puts "Probably NOT a vampire"
-elsif !(age && bread) && !(age && insurance)
+elsif !(youth && bread) && !(age && insurance)
 	puts "Almost certainly a vampire"
-elsif !age && !bread || !insurance
+elsif !youth && !bread || !insurance
 	puts "Probably a Vampire"
 else
 	puts "Results inconclusive."
