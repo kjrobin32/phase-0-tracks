@@ -64,52 +64,66 @@
 
 
 # The code below is for chimpmonks.
+puts "How many employees do  you want to process?"
+employees = gets.chomp.to_i
+until employees == 0
+	puts "What is your name?"
+	name = gets.chomp
+	if name == "Drake Cula"
+		fangs = true
+	elsif name == "Tu Fang"
+		fangs = true
+	else
+		false
+	end
 
-puts "What is your name?"
-name = gets.chomp
+	puts "What is your age?"
+	age = gets.chomp.to_i
 
+	if age < 65
+		youth = true
+	else
+		youth = false
+	end
 
-puts "What is your age?"
-age = gets.chomp.to_i
+	puts "Do you like garlic bread"
+	garlic = gets.chomp
+	if garlic == "yes"
+		bread = true
+	else
+		bread = false
+	end
+	puts "Do you want health insurance?"
+	health = gets.chomp
+	if health == "yes"
+		insurance = true
+	else
+		insurance = false
+	end
+	puts "Do you have any allergies?"
+	allergies = gets.chomp	
+	until allergies = 
 
-if age < 65
-	youth = true
-else
-	youth = false
-end
-
-puts "Do you like garlic bread"
-garlic = gets.chomp
-if garlic == "yes"
-	bread = true
-else
-	bread = false
-end
-puts "Do you want health insurance?"
-health = gets.chomp
-if health == "yes"
-	insurance = true
-else
-	insurance = false
-end
-
-
+		if alergies = "sunshine"
+		"done"
+		puts "Please enter allergies"
+		allergies = gets.chomp
+	end
 # driver code
 
-if name == "Drake Cula"
-	puts "Definitely a vampire."
-elsif name == "Tu Fang"
-	puts "Definitely a vampire."
-elsif youth && (bread || insurance)
-	puts "Probably NOT a vampire"
-elsif !(youth && bread) && !(age && insurance)
-	puts "Almost certainly a vampire"
-elsif !youth && !bread || !insurance
-	puts "Probably a Vampire"
-else
-	puts "Results inconclusive."
+	if fangs 
+		puts "Definitely a vampire."
+	elsif youth && (bread || insurance)
+		puts "Probably NOT a vampire"
+	elsif !(youth && bread) && !(age && insurance)
+		puts "Almost certainly a vampire"
+	elsif !youth && !bread || !insurance
+		puts "Probably a Vampire"
+	else
+		puts "Results inconclusive."
+	end
+		employees = employees - 1
 end
-
 
 p youth
 p bread
