@@ -112,7 +112,7 @@ until employees == 0
 			elsif allergies == "done"
 				allergy_input = true
 		else
-			puts "Please enter allergies"
+			puts "Please enter allergies. type 'done' when finished"
 			allergies = gets.chomp
 			allergy_input = false
 		end
@@ -137,6 +137,5 @@ end
 		employees = employees - 1
 end
 
-p youth
-p bread
-p insurance
+puts "Actually, never mind! What do these questions have to do with anything? Let's all be friends." 
+
