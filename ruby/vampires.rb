@@ -24,7 +24,7 @@
 # puts "our company servers garlic bread... should we order some for you?"
 # 		garlic = gets.chomp
 # 		if garlic == "yes"
-# 		food = true
+# 		bread = true
 # 	else
 # 		false
 # 	end
@@ -46,11 +46,11 @@
 # 	vampire_data = "probably a vampire"
 # 	elsif  sure == true		
 # 	vampire_data = "definitely a vampire"
-# 	elsif age && (food || plan)
+# 	elsif age && (bread || plan)
 # 	puts "probably not a vampire"
-# 	elsif (!age) && (!food) || (!plan)
+# 	elsif (!age) && (!bread) || (!plan)
 # 	vampire_data = "probably a vampire data"		
-# 	elsif (!age) && (!food) && (!plan) 
+# 	elsif (!age) && (!bread) && (!plan) 
 # 		vampire_data = "almost certainly a vampire"	 			 		
 # 	else
 # 		vampire_data = "results inconclusive"	
@@ -65,6 +65,10 @@
 
 # The code below is for chimpmonks.
 
+puts "What is your name?"
+name = gets.chomp
+
+
 puts "What is your age?"
 age = gets.chomp.to_i
 
@@ -77,9 +81,9 @@ end
 puts "Do you like garlic bread"
 garlic = gets.chomp
 if garlic == "yes"
-	food = true
+	bread = true
 else
-	food = false
+	bread = false
 end
 puts "Do you want health insurance?"
 health = gets.chomp
@@ -89,10 +93,22 @@ else
 	insurance = false
 end
 
-if youth && (food || insurance)
+
+# driver code
+
+if name = "Drake Cula" || "Tu Fang"
+puts "Definitely a vampire."
+	youth && (bread || insurance)
 	puts "Probably NOT a vampire"
+elsif !(age && bread) && !(age && insurance)
+	puts "Almost certainly a vampire"
+elsif !age && !bread || !insurance
+	puts "Probably a Vampire"
+else
+	puts "Results inconclusive."
 end
 
-p insurance
-p food
+
 p youth
+p bread
+p insurance
