@@ -4,25 +4,28 @@ until all the letters in the word have been reviewed
 	if the letter is z it will need to be change to a eveything else will need to be moved to the next letter.
 =end
 
-# def encrypt(word)
-# index = 0
-# 	until index == word.length
-# 	if word[index] == "z"
-# 		word[index]= "a"
-# 		else 
-# 		word[index] = word[index].next	
-# 	end
-# 	index = index + 1
-# 	end
-# 	return word 
-# end
+def encrypt(word)
+index = 0
+	until index == word.length
+	if word[index] == "z"
+		word[index]= "a"
+	elsif word[index] == " "
+			word[index] = " "			
+	else 
+		word[index] = word[index].next	
+	end
+	index = index + 1
+	end
+	return word 
+end
 
 word = gets.chomp
-# puts encrypt(word)
+puts encrypt(word)
 
 =begin
 sarting with the first lettet
-untiall all the letters have been reviewed
+install all the letters have been reviewed
+set the index letter of the word = 
 	
 =end
 
@@ -41,4 +44,6 @@ end
 end
 
 puts decrypt(word)
+
+puts decrypt(encrypt(word))
 
