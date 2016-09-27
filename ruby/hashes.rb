@@ -107,6 +107,10 @@ puts "what is your favorite color?"
 fav_color = gets.chomp
 application[:favorite_color] = fav_color
 
+puts "What is your favorite room in the house"
+room = gets.chomp
+application[:favorite_room] = room
+
 puts "How many bedrooms?"
 bedrooms = gets.chomp
 application[:bed_rooms] = bedrooms
@@ -118,7 +122,7 @@ children = gets.chomp
 	kids = gets.chomp.to_i
 	application[:children] = kids
 	elsif
-	puts "No children."
+	kids = 0
 end
 
 # puts "would you like to recommend us?"
@@ -142,14 +146,13 @@ until update == true
 	update = true
 	else
 		question == "yes"
-		puts "what would you like change"
+		puts "What would you like change"
 		change = gets.chomp.to_sym
-		puts "what would you like yo change it to?"
+		puts "What would you like yo change it to?"
 		new_value = gets.chomp
 		application[change] = new_value
 		update = false
 	end
 end
-
 
 puts application
