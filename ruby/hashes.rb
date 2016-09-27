@@ -99,7 +99,7 @@ application[:name] = name
 
 
 puts "What is your age?"
-years = gets.chomp
+years = gets.chomp.to_i
 application[:age] = years
 
 
@@ -111,9 +111,45 @@ puts "How many bedrooms?"
 bedrooms = gets.chomp
 application[:bed_rooms] = bedrooms
 
+puts "do you have any children?"
+children = gets.chomp
+	if children == "yes"
+	puts "how many children?"
+	kids = gets.chomp.to_i
+	application[:children] = kids
+	elsif
+	puts "No children."
+end
 
+# puts "would you like to recommend us?"
+# recommend = gets.chomp
+# question = false
+# until recommend == "yes"
+# 	puts "you must enters yes"
 
-puts appplication
+# end
+
+puts application
+
+puts "Do you want to update any questions? Type none when finished"
+update = false
+until update == true
+	puts "Type none when finished"
+	question = gets.chomp
+	if question == "none"
+	update = true
+	elsif question == "no"
+	update = true
+	else
+		question == "yes"
+		puts "what would you like change"
+		change = gets.chomp.to_sym
+		puts "what would you like yo change it to?"
+		new_value = gets.chomp
+		application[change] = new_value
+		update = false
+	end
+end
 
 
 puts application
