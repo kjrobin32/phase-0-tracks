@@ -1,3 +1,4 @@
+=begin
 # def pokedex
 # 
 # 	puts "Pokedex GO!"
@@ -101,7 +102,61 @@ end
 
 p medal_count
 
+=end
+=begin
+	
+second time around
+	
+=end
 
+dogs = ["husky", "pitbull", "dotson", "pug"]
 
+dogs.each {|dog| puts "Your favortie dogs is a #{dog}"}
 
+dogs.map! {|dog| dog.reverse}
 
+puts dogs
+
+eufa = {
+	Dortmund: "Germany",
+	Real_Marid: "Spain",
+	Tottenham: "England",
+	Porto: "Portugal" 
+}
+
+eufa.each {|team, country | puts "Horray #{country}, #{team} is in the championship!"}
+
+numbers = [1,4,7,9]
+numbers.delete_if {|x| x > 6}
+puts numbers
+
+numbers = [1,4,7,9]
+p numbers.select {|x| x < 6}
+puts numbers
+
+numbers = [1,4,7,9]
+p numbers.reject { |x| x < 6  }
+puts numbers
+
+numbers = [1,4,7,9]
+p numbers.drop_while {|x| x < 10}
+p numbers
+
+#####
+championship = {seahawks: 1, cowboys: 4, broncos: 3}
+championship.delete_if {|team, wins| wins > 3}
+puts championship
+
+championship = {seahawks: 1, cowboys: 4, broncos: 3}
+p championship.select {|team, wins| wins > 3}
+puts championship
+
+championship = {seahawks: 1, cowboys: 4, broncos: 3}
+p championship.reject {|team, wins| wins < 2}
+puts championship
+
+championship = {seahawks: 1, cowboys: 4, broncos: 3}
+p championship.has_value?(2)
+puts championship
+
+# {|team, wins| wins > 2}
