@@ -1,3 +1,4 @@
+=begin
 # def pokedex
 # 
 # 	puts "Pokedex GO!"
@@ -101,7 +102,23 @@ end
 
 p medal_count
 
+=end
+=begin
+	
+second time around
+	
+=end
 
+dogs = "[husky", "pitbull", "dotson", "pug]"
 
+dogs.each {|dog| puts "#{dog}"}
 
+eufa = {
+	Dortmund: "Germany",
+	Real_Marid: "Spain",
+	Tottenham: "England",
+	Porto: "Portugal" 
+}
+
+eufa.each {|team, country | puts "Horray #{country}, #{team} is in the championship!"}
 
