@@ -69,29 +69,51 @@ second time around
 	
 
 create a hash that has name , age, favorite_color, rooms, bedrooms, children	
-ask the for name, age, favorite color, favorite room in house, bed rooms in house
-and children	
+ask the for name, age, favorite color, favorite room in house, bed rooms in house and children	
+get each item
+put each item into the application hash
+
+put "do you want to update any item"
+if item is == ":name"
+	puts "please update item"
+
+
+puts ""
 =end
 
 application = {
-"name" => "____________"  ,
-"age" =>" ______________",
-"favorite_color" => "______________",
-"favorite_room" => "____________",
-"bed_rooms" => "__________________",
-"children" => "__________________",
+:name => "____________"  ,
+:age =>" ______________",
+:favorite_color => "______________",
+:favorite_room => "____________",
+:bed_rooms => "__________________",
+:children => "__________________",
+:decore_theme => "____________"
 }
 
 puts application
 
 puts "What is your name?"
 name = gets.chomp
-application ["name"] = name
+application[:name] = name
+
+
 puts "What is your age?"
 years = gets.chomp
+application[:age] = years
+
+
 puts "what is your favorite color?"
 fav_color = gets.chomp
-puts "How many bedrooms"
-bed_rooms = gets.chomp
+application[:favorite_color] = fav_color
+
+puts "How many bedrooms?"
+bedrooms = gets.chomp
+application[:bed_rooms] = bedrooms
+
+
+
+puts appplication
+
 
 puts application
