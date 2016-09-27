@@ -137,6 +137,11 @@ puts numbers
 numbers = [1,4,7,9]
 p numbers.reject { |x| x < 6  }
 puts numbers
+
+numbers = [1,4,7,9]
+p numbers.drop_while {|x| x < 10}
+p numbers
+
 #####
 championship = {seahawks: 1, cowboys: 4, broncos: 3}
 championship.delete_if {|team, wins| wins > 3}
@@ -149,3 +154,9 @@ puts championship
 championship = {seahawks: 1, cowboys: 4, broncos: 3}
 p championship.reject {|team, wins| wins < 2}
 puts championship
+
+championship = {seahawks: 1, cowboys: 4, broncos: 3}
+p championship.has_value?(2)
+puts championship
+
+# {|team, wins| wins > 2}
