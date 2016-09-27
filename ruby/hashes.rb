@@ -107,7 +107,8 @@ puts "what is your favorite color?"
 fav_color = gets.chomp
 application[:favorite_color] = fav_color
 
-puts "What is your favorite room in the house"
+puts "What is your favorite room in the house?
+"
 room = gets.chomp
 application[:favorite_room] = room
 
@@ -115,14 +116,14 @@ puts "How many bedrooms?"
 bedrooms = gets.chomp
 application[:bed_rooms] = bedrooms
 
-puts "do you have any children?"
+puts "Do you have any children?"
 children = gets.chomp
 	if children == "yes"
 	puts "how many children?"
 	kids = gets.chomp.to_i
 	application[:children] = kids
 	elsif
-	kids = 0
+	kids == 0
 end
 
 # puts "would you like to recommend us?"
@@ -132,6 +133,9 @@ end
 # 	puts "you must enters yes"
 
 # end
+puts "How would you like to theme the decor of your home?"
+decor = gets.chomp
+application[:decore_theme] = decor
 
 puts application
 
