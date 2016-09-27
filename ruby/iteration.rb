@@ -109,9 +109,13 @@ second time around
 	
 =end
 
-dogs = "[husky", "pitbull", "dotson", "pug]"
+dogs = ["husky", "pitbull", "dotson", "pug"]
 
-dogs.each {|dog| puts "#{dog}"}
+dogs.each {|dog| puts "Your favortie dogs is a #{dog}"}
+
+dogs.map! {|dog| dog.reverse}
+
+puts dogs
 
 eufa = {
 	Dortmund: "Germany",
