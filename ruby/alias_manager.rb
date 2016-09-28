@@ -58,8 +58,8 @@ puts "Agent you are in a whole lot of crap and need to get to the choooppa! but 
 name = name.split.reverse
 name = name.to_s
 
-name.gsub!(/[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]/, 'a' => 'e', 'A' => 'E', 'e' => 'i', 'E' => 'I', 'i' => 'o', 'I' => 'O' 'O' => 'U',"o" => 'u,' 'u' => 'a', 'U' => 'A', 'b' => 'c', 'c' => 'd', 'd' => 'f', 'f' => 'g', 'g' => 'h', 'h' => 'j', 'j' => 'k', 'k' => 'l', 'l' => 'm', 'm' => 'n', 'n' => 'p', 'p' => 'q', 'q' => 'r', 'r' => 's', 's' => 't', 't' => 'v', 'v' => 'w', 'w' => 'x', 'x' => 'y', 'y' => 'z', 'z' => 'b', 'B' => 'C', 'C' => 'D', 'D' => 'F', 'F' => 'G', 'G' => 'H', 'H' => 'J', 'J' => 'K', 'K' => 'L', 'L' => 'M', 'M'=>'N', 'N' => 'P', 'P' => 'Q', 'Q' => 'R', 'R' => 'S', 'S' =>'T', 'T'=> 'V', 'V' => 'W', 'W' => 'X', 'X' => 'Y', 'Y' => 'Z')
+name.gsub!(/[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]/, 'a' => 'e', 'A' => 'E', 'e' => 'i', 'E' => 'I', 'i' => 'o', 'I' => 'O', 'O' => 'U','o' => 'u', 'u' => 'a', 'U' => 'A', 'b' => 'c', 'c' => 'd', 'd' => 'f', 'f' => 'g', 'g' => 'h', 'h' => 'j', 'j' => 'k', 'k' => 'l', 'l' => 'm', 'm' => 'n', 'n' => 'p', 'p' => 'q', 'q' => 'r', 'r' => 's', 's' => 't', 't' => 'v', 'v' => 'w', 'w' => 'x', 'x' => 'y', 'y' => 'z', 'z' => 'b', 'B' => 'C', 'C' => 'D', 'D' => 'F', 'F' => 'G', 'G' => 'H', 'H' => 'J', 'J' => 'K', 'K' => 'L', 'L' => 'M', 'M'=>'N', 'N' => 'P', 'P' => 'Q', 'Q' => 'R', 'R' => 'S', 'S' =>'T', 'T'=> 'V', 'V' => 'W', 'W' => 'X', 'X' => 'Y', 'Y' => 'Z', 'Z' => "B")
 
 
-puts name
+puts "#{name}"
 p name.class
