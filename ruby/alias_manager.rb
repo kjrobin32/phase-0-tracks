@@ -55,18 +55,20 @@ if the letter is gib and a consotant make it to thenext constant
 
 	puts "Agent you are in a whole lot of crap and need to get to the choooppa...but before you can get to the choppa, you need a new alias....!!!"
 	name = nil
+	name_array = []
 	until name == "quit"
 	puts "Please input your first and last name. Type quit when done?"	
 	name = gets.chomp
 	if name == "quit"
-		puts "Your name is now #{name[0]} #{name[1]}....get to the CHOPPA"
+		puts "Your name is now #{name_array[0-1][0]} #{name_array[0-1][1]}....get to the CHOPPA"
 	else	
 		name.gsub!(/[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]/, 'a' => 'e', 'A' => 'E', 'e' => 'i', 'E' => 'I', 'i' => 'o', 'I' => 'O', 'O' => 'U','o' => 'u', 'u' => 'a', 'U' => 'A', 'b' => 'c', 'c' => 'd', 'd' => 'f', 'f' => 'g', 'g' => 'h', 'h' => 'j', 'j' => 'k', 'k' => 'l', 'l' => 'm', 'm' => 'n', 'n' => 'p', 'p' => 'q', 'q' => 'r', 'r' => 's', 's' => 't', 't' => 'v', 'v' => 'w', 'w' => 'x', 'x' => 'y', 'y' => 'z', 'z' => 'b', 'B' => 'C', 'C' => 'D', 'D' => 'F', 'F' => 'G', 'G' => 'H', 'H' => 'J', 'J' => 'K', 'K' => 'L', 'L' => 'M', 'M'=>'N', 'N' => 'P', 'P' => 'Q', 'Q' => 'R', 'R' => 'S', 'S' =>'T', 'T'=> 'V', 'V' => 'W', 'W' => 'X', 'X' => 'Y', 'Y' => 'Z', 'Z' => "B")
 		name = name.split.reverse
 		puts "Your name is now #{name[0]} #{name[1]}"
+	name_array << name	
 	end
 
 end
 
+name_array.each {|full| puts "#{full[0]} #{full[1]}"}
 
-p name.class
