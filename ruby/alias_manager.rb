@@ -53,13 +53,15 @@ if the letter is gib and a consotant make it to thenext constant
 =end
 
 
-name = "Kamron Robinson"
+
 puts "Agent you are in a whole lot of crap and need to get to the choooppa! but before you can get to the choppa, you need a new alias....!!! Please input your first and lasy name."
+name = gets.chomp
+alias = false
+Until alias == true
+
+if name.gsub!(/[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]/, 'a' => 'e', 'A' => 'E', 'e' => 'i', 'E' => 'I', 'i' => 'o', 'I' => 'O', 'O' => 'U','o' => 'u', 'u' => 'a', 'U' => 'A', 'b' => 'c', 'c' => 'd', 'd' => 'f', 'f' => 'g', 'g' => 'h', 'h' => 'j', 'j' => 'k', 'k' => 'l', 'l' => 'm', 'm' => 'n', 'n' => 'p', 'p' => 'q', 'q' => 'r', 'r' => 's', 's' => 't', 't' => 'v', 'v' => 'w', 'w' => 'x', 'x' => 'y', 'y' => 'z', 'z' => 'b', 'B' => 'C', 'C' => 'D', 'D' => 'F', 'F' => 'G', 'G' => 'H', 'H' => 'J', 'J' => 'K', 'K' => 'L', 'L' => 'M', 'M'=>'N', 'N' => 'P', 'P' => 'Q', 'Q' => 'R', 'R' => 'S', 'S' =>'T', 'T'=> 'V', 'V' => 'W', 'W' => 'X', 'X' => 'Y', 'Y' => 'Z', 'Z' => "B")
 name = name.split.reverse
-name = name.to_s
-
-name.gsub!(/[abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ]/, 'a' => 'e', 'A' => 'E', 'e' => 'i', 'E' => 'I', 'i' => 'o', 'I' => 'O', 'O' => 'U','o' => 'u', 'u' => 'a', 'U' => 'A', 'b' => 'c', 'c' => 'd', 'd' => 'f', 'f' => 'g', 'g' => 'h', 'h' => 'j', 'j' => 'k', 'k' => 'l', 'l' => 'm', 'm' => 'n', 'n' => 'p', 'p' => 'q', 'q' => 'r', 'r' => 's', 's' => 't', 't' => 'v', 'v' => 'w', 'w' => 'x', 'x' => 'y', 'y' => 'z', 'z' => 'b', 'B' => 'C', 'C' => 'D', 'D' => 'F', 'F' => 'G', 'G' => 'H', 'H' => 'J', 'J' => 'K', 'K' => 'L', 'L' => 'M', 'M'=>'N', 'N' => 'P', 'P' => 'Q', 'Q' => 'R', 'R' => 'S', 'S' =>'T', 'T'=> 'V', 'V' => 'W', 'W' => 'X', 'X' => 'Y', 'Y' => 'Z', 'Z' => "B")
+puts "Yor name is now #{name[0]} #{name[1]}....get to the CHOPPA"
 
 
-puts "#{name}"
 p name.class
