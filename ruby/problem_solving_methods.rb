@@ -16,15 +16,16 @@ then takes the number and puts it in the array
 
 # p 100.times {|x| numbers_array[x] + numbers_array[x + 1]}
 
-
-numbers_array = [0, 1]
-i = 0
-while i < 100	
- new_number = numbers_array[i] + numbers_array[i + 1]
- numbers_array << new_number
- i += 1
- puts numbers_array[i]
+def fil(i)
+	numbers_array = [0, 1]
+	i = 0
+	while i < 100-1	
+	 new_number = numbers_array[i] + numbers_array[i + 1]
+	 numbers_array << new_number
+	 i += 1
+	end
+	puts numbers_array[i]
 end
 
-
+puts fil(100)
 
