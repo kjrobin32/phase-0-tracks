@@ -12,3 +12,20 @@
 # aroused: typically
 
 
+=begin
+dog age category-----
+puppy
+
+characteristics-----
+age: young
+energy: high
+fur: soft
+sleepy: yes
+
+behaviour-----
+jump
+run
+sniff
+=end
+
+
