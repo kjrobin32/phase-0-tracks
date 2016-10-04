@@ -59,35 +59,66 @@ second time around
 
 
 
-class Puppy
+# class Puppy
+# 	def initialize
+# 	puts "Initializing new puppuy instance..."
+# 	end
+# 	def fetch(toy)
+# 		puts "I bought back the #{toy}"
+# 		toy
+# 	end
+# 	def speak(x)
+# 		x.times {|woof| puts "woof"}
+# 	end
+# 	def roll_over
+# 		puts "rollover"
+# 	end
+# 	def dog_years(x)
+# 		p x * 7
+# 	end
+# 	def bite
+# 		puts "Aww something bite me!"
+# 	end
+# end
+
+# tom = Puppy.new
+# tom.fetch("ball")
+# tom.speak(3)
+# tom.roll_over
+# tom.dog_years(2)
+# tom.bite
+
+
+class Dolphin
 	def initialize
-	puts "Initializing new puppuy instance..."
+		puts "This is a new dolphin."
 	end
-	def fetch(toy)
-		puts "I bought back the #{toy}"
-		toy
+	def swim
+		puts "This dolphin swims through the water"
 	end
-	def speak(x)
-		x.times {|woof| puts "woof"}
-	end
-	def roll_over
-		puts "rollover"
-	end
-	def dog_years(x)
-		p x * 7
-	end
-	def bite
-		puts "Aww something bite me!"
+	def jumps
+		puts "This dolphin jumps through the water"
 	end
 end
 
 
+instances = 0
+
+until instances > 2
+	dolphin_array = []
+	biles = Dolphin.new
+	biles.swim
+	biles.jumps
+	instances += 1
+	dolphin_array << biles
+end
 
 
-tom = Puppy.new
-tom.fetch("ball")
-tom.speak(3)
-tom.roll_over
-tom.dog_years(2)
-tom.bite
 
+p dolphin_array[0]
+
+=begin
+		until there are 50 instances
+			create instances of dolphin store all instance of in a array.
+			use a block to go over .each item and run a method for each
+=end
