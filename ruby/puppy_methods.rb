@@ -118,7 +118,10 @@ puts dolphin_array[0]
 puts dolphin_array[1]
 puts dolphin_array[2]
 
-
+dolphin_array.each {|dolphin| 
+	biles.jumps
+	biles.swim
+}
 
 
 
