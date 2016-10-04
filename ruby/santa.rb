@@ -1,3 +1,4 @@
+=begin
 	class Santa
 		attr_accessor :gender, :ethnicity, :age
 		def initialize (gender, ethnicity)
@@ -52,6 +53,8 @@ until santa == 4
 santa += 1
 end
 
+
+
 # puts Santa.inspect
 # puts Santa.class_variables
 
@@ -59,3 +62,19 @@ end
 # 		start.times{|start|Santa.new}
 # 		puts Santa.include
 # 		end
+
+=end
+
+=begin
+second time around	
+=end
+
+class Santa
+	def intialize
+	puts "Initializing Santa instance..."
+	end
+end
+
+
+santa = Santa.new
+puts santa
