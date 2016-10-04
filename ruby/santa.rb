@@ -71,10 +71,14 @@ second time around
 
 class Santa
 	def intialize
-	puts "Initializing Santa instance..."
+		puts "Initializing Santa instance..."
+	end
+	def speak
+		puts "Ho, ho, ho! Haaaaapy hoidays!"
 	end
 end
 
 
 santa = Santa.new
+santa.speak 
 puts santa
