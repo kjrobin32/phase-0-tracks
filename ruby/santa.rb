@@ -76,9 +76,13 @@ class Santa
 	def speak
 		puts "Ho, ho, ho! Haaaaapy hoidays!"
 	end
+	def eat_milk_and_cookies(type)
+		puts "That was a good #{type}"
+	end
 end
 
 
 santa = Santa.new
 santa.speak 
+santa.eat_milk_and_cookies("oreo")
 puts santa
