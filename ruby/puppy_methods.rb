@@ -101,21 +101,28 @@ class Dolphin
 	end
 end
 
+sam = Dolphin.new
+sam.swim
+sam.jumps
 
-instances = 0
-
-until instances > 2
-	dolphin_array = []
+instances = 0	
+dolphin_array = []	
+until instances > 2	
 	biles = Dolphin.new
-	biles.swim
-	biles.jumps
-	instances += 1
 	dolphin_array << biles
-end
+	instances += 1
+end	
+
+
+puts dolphin_array[0]
+puts dolphin_array[1]
+puts dolphin_array[2]
 
 
 
-p dolphin_array[0]
+
+
+
 
 =begin
 		until there are 50 instances
