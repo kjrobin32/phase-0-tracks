@@ -83,4 +83,4 @@ tom = Puppy.new
 tom.fetch("ball")
 tom.speak(3)
 tom.roll_over
-tom.dop_years(3)
+tom.dog_years(3)
