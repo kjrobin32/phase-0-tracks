@@ -74,6 +74,9 @@ class Puppy
 	def dog_years(x)
 		p x * 7
 	end
+	def bite
+		puts "Aww something bite me!"
+	end
 end
 
 
@@ -83,4 +86,5 @@ tom = Puppy.new
 tom.fetch("ball")
 tom.speak(3)
 tom.roll_over
-tom.dog_years(3)
+tom.dog_years(2)
+tom.bite
