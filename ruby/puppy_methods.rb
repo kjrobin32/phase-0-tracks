@@ -107,7 +107,7 @@ sam.jumps
 
 instances = 0	
 dolphin_array = []	
-until instances > 2	
+until instances > 50
 	biles = Dolphin.new
 	dolphin_array << biles
 	instances += 1
@@ -118,7 +118,8 @@ puts dolphin_array[0]
 puts dolphin_array[1]
 puts dolphin_array[2]
 
-dolphin_array.each {|dolphin| 
+dolphin_array.each {|dolphin|
+	puts "#{dolphin}" 
 	biles.jumps
 	biles.swim
 }
