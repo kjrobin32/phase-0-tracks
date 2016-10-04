@@ -59,8 +59,10 @@ second time around
 
 
 
-
 class Puppy
+	def initialize
+	puts "Initializing new puppuy instance..."
+	end
 	def fetch(toy)
 		puts "I bought back the #{toy}"
 		toy
@@ -88,3 +90,4 @@ tom.speak(3)
 tom.roll_over
 tom.dog_years(2)
 tom.bite
+
