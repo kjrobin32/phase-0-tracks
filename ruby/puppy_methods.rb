@@ -33,17 +33,54 @@
 # hfingerd.leg(3)
 
 
-class Bteam
-	def initialize
-		puts "Create your Bteam. your team can be up to 50 ballers!!"
-		instance = gets.chomp
-		[instance].each{|instance| puts instance}
+# class Bteam
+# 	def initialize
+# 		puts "Create your Bteam. your team can be up to 50 ballers!!"
+# 		instance = gets.chomp
+# 		[instance].each{|instance| puts instance}
+# 	end
+# 	def bottom(start)
+# 		start.times{|start|Bteam.new}
+# 	end
+# end
+
+# pointgaurd = Bteam.new
+# pointgaurd.bottom(50)
+
+
+
+
+
+
+=begin
+second time around
+=end
+
+
+
+
+
+class Puppy
+	def fetch(toy)
+		puts "I bought back the #{toy}"
+		toy
 	end
-	def bottom(start)
-		start.times{|start|Bteam.new}
+	def speak(x)
+		x.times {|woof| puts "woof"}
+	end
+	def roll_over
+		puts "rollover"
+	end
+	def dog_years(x)
+		p x * 7
 	end
 end
 
-pointgaurd = Bteam.new
-pointgaurd.bottom(50)
 
+
+
+tom = Puppy.new
+tom.fetch("ball")
+tom.speak(3)
+tom.roll_over
+tom.dop_years(3)
