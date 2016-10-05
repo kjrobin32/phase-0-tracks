@@ -70,8 +70,13 @@ second time around
 =end
 
 class Santa
-	def initialize
+	reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
+	age = 0
+	def initialize(shoes)
 		puts "Initializing Santa instance..."
+		@gender = "Kam"
+		@ethnicity = "black"
+		@shoes = "boats"
 	end
 	def speak
 		puts "Ho, ho, ho! Haaaaapy hoidays!"
@@ -79,10 +84,16 @@ class Santa
 	def eat_milk_and_cookies(type)
 		puts "That was a good #{type}"
 	end	
+	def footware(boots)
+		puts "Santa has #{boots}"
+	end
 end
 
 
-santa = Santa.new
+santa = Santa.new("no boots")
+santa.footware("no boots")
 santa.speak 
 santa.eat_milk_and_cookies("oreo")
+
 puts santa
+
