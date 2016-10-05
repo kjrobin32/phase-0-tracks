@@ -106,19 +106,23 @@ class Santa
 	end
 end
 
+count = 0
+until count == 3
+	santa = Santa.new("no boots")
+	santa.footware("no boots")
+	santa.speak 
+	santa.eat_milk_and_cookies("oreo")
+	santa.face("black")
+	santa.celebrate_birthday
+	santa.get_mad_at("Dasher")
+	puts "#{santa.ethnicity.sample}"
+	puts "#{santa.gender.sample}"
+	puts santa
+count += 1
+end
 
-santa = Santa.new("no boots")
-santa.footware("no boots")
-santa.speak 
-santa.eat_milk_and_cookies("oreo")
-santa.face("black")
-santa.celebrate_birthday
-santa.get_mad_at("Dasher")
-puts "#{santa.ethnicity.sample}"
-puts "#{santa.gender.sample}"
-puts santa
 
-
+# puts each santa with all the data. create 10 santas
 # create to arrays with sample genders and sample enthnicities
 # use mthods to randdomly select a gender and a enthnicitey
 # set santas age to a random number less than 0 up to 140.
