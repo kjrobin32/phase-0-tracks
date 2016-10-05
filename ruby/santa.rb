@@ -73,13 +73,15 @@ second time around
 class Santa	
 	attr_reader :age, :ethnicity
 	attr_accessor :reindeer_ranking, :gender 
-	def initialize(shoes, gender)
+	def initialize(shoes)
 		puts "Initializing Santa instance..."
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 		@age = 0		
-		@ethnicity = "black"
+		@ethnicity = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
 		@shoes = "boats"
 		@face_paint = "none"
+		@gender = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+
 	end
 	def speak
 		puts "Ho, ho, ho! Haaaaapy hoidays!"
@@ -94,8 +96,8 @@ class Santa
 		puts "Stanta has #{face_paint} face paint."
 	end
 	def celebrate_birthday
-		age = 1
-		puts "#{age}"
+		age = rand(0...140)
+		puts "Santa is #{age}"
 	end
 	def get_mad_at(reindeer)
 		reindeer_ranking.delete(reindeer)
@@ -105,15 +107,18 @@ class Santa
 end
 
 
-santa = Santa.new("no boots", "male")
+santa = Santa.new("no boots")
 santa.footware("no boots")
 santa.speak 
 santa.eat_milk_and_cookies("oreo")
 santa.face("black")
 santa.celebrate_birthday
 santa.get_mad_at("Dasher")
-santa.gender = "female"
-puts "#{santa.ethnicity}"
-puts "#{santa.gender}"
+puts "#{santa.ethnicity.sample}"
+puts "#{santa.gender.sample}"
 puts santa
 
+
+# create to arrays with sample genders and sample enthnicities
+# use mthods to randdomly select a gender and a enthnicitey
+# set santas age to a random number less than 0 up to 140.
