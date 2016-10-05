@@ -71,7 +71,7 @@ second time around
 
 
 class Santa	
-	attr_reader :age
+	attr_reader :age, :ethnicity
 	attr_accessor :reindeer_ranking, :gender 
 	def initialize(shoes, gender)
 		puts "Initializing Santa instance..."
@@ -101,9 +101,6 @@ class Santa
 		reindeer_ranking.delete(reindeer)
 		reindeer_ranking << reindeer
 		puts reindeer_ranking
-	end
-	def ethnicity
-		@ethnicity
 	end
 end
 
