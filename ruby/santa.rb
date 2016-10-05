@@ -80,6 +80,9 @@ class Santa
 		@shoes = "boats"
 		@face_paint = "none"
 	end
+	def reindeer_ranking
+		@reindeer_ranking
+	end
 	def reindeer_ranking=(reindeer_ranking)
 		@reindeer_ranking = reindeer_ranking
 	end
@@ -102,10 +105,11 @@ class Santa
 		age = 1
 		puts "#{age}"
 	end
-	# def get_mad_at(reindeer)
-	# 	reindeer_ranking << reindeer
-	# 	puts reindeer_ranking
-	# end
+	def get_mad_at(reindeer)
+		reindeer_ranking.delete(reindeer)
+		reindeer_ranking << reindeer
+		puts reindeer_ranking
+	end
 end
 
 
@@ -115,6 +119,6 @@ santa.speak
 santa.eat_milk_and_cookies("oreo")
 santa.face("black")
 santa.celebrate_birthday
-# santa.get_mad_at("Dasher")
+santa.get_mad_at("Dasher")
 puts santa
 
