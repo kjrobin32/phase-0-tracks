@@ -70,7 +70,7 @@ second time around
 =end
 
 class Santa
-	def intialize
+	def initialize
 		puts "Initializing Santa instance..."
 	end
 	def speak
@@ -78,7 +78,7 @@ class Santa
 	end
 	def eat_milk_and_cookies(type)
 		puts "That was a good #{type}"
-	end
+	end	
 end
 
 
