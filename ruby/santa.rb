@@ -71,7 +71,7 @@ second time around
 
 
 class Santa	
-	attr_reader 
+	attr_reader :age
 	attr_accessor :reindeer_ranking, :gender 
 	def initialize(shoes, gender)
 		puts "Initializing Santa instance..."
@@ -80,10 +80,6 @@ class Santa
 		@ethnicity = "black"
 		@shoes = "boats"
 		@face_paint = "none"
-	end
-
-	def age=(age)
-		@age = age
 	end
 	def speak
 		puts "Ho, ho, ho! Haaaaapy hoidays!"
