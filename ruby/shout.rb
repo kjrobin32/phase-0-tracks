@@ -1,4 +1,5 @@
-module Shout
+=begin
+  module Shout
  	def yell_happily(words)
   	words + ":)"  
 	end
@@ -40,3 +41,18 @@ puts crazy_woman.yell_happily("GO CHELSEA!!!!")
   	
 # Shout.yell_happily("tom")
 # Shout.yell_angrily("tom")
+=end
+
+
+
+module Shout
+  def self.yell_angrily(words)
+      words + "!!!" + " :("
+    end
+  def self.yell_happily(words)
+    words + "!!!" + " :)"
+    end
+end
+
+p Shout.yell_angrily("go home")
+p Shout.yell_happily("stay here")
