@@ -77,6 +77,7 @@ class Santa
 		@gender = "Kam"
 		@ethnicity = "black"
 		@shoes = "boats"
+		@face_paint = "none"
 	end
 	def speak
 		puts "Ho, ho, ho! Haaaaapy hoidays!"
@@ -87,6 +88,9 @@ class Santa
 	def footware(boots)
 		puts "Santa has #{boots}"
 	end
+	def face(face_paint)
+		puts "Stanta has #{face_paint} face paint."
+	end
 end
 
 
@@ -94,6 +98,7 @@ santa = Santa.new("no boots")
 santa.footware("no boots")
 santa.speak 
 santa.eat_milk_and_cookies("oreo")
+santa.face("black")
 
 puts santa
 
