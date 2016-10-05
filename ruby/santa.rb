@@ -71,20 +71,21 @@ second time around
 
 
 class Santa	
-	def initialize(shoes)
+	attr_reader 
+	attr_accessor :reindeer_ranking 
+	def initialize(shoes, gender)
 		puts "Initializing Santa instance..."
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 		@age = 0		
-		@gender = "Kam"
 		@ethnicity = "black"
 		@shoes = "boats"
 		@face_paint = "none"
 	end
-	def reindeer_ranking
-		@reindeer_ranking
+	def gender=(gender)
+		@gender = gender
 	end
-	def reindeer_ranking=(reindeer_ranking)
-		@reindeer_ranking = reindeer_ranking
+	def gender
+		@gender
 	end
 	def age=(age)
 		@age = age
@@ -110,15 +111,21 @@ class Santa
 		reindeer_ranking << reindeer
 		puts reindeer_ranking
 	end
+	def ethnicity
+		@ethnicity
+	end
 end
 
 
-santa = Santa.new("no boots")
+santa = Santa.new("no boots", "male")
 santa.footware("no boots")
 santa.speak 
 santa.eat_milk_and_cookies("oreo")
 santa.face("black")
 santa.celebrate_birthday
 santa.get_mad_at("Dasher")
+santa.gender = "female"
+puts "#{santa.ethnicity}"
+puts "#{santa.gender}"
 puts santa
 
