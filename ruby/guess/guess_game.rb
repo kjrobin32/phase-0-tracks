@@ -23,16 +23,27 @@ when finished put "good job"
 =end
 
 word = "hat".chars
+p word
+word_holder = word
+
+place_holder = word_holder.fill("_")
+p word
+p word_holder
+p place_holder
+p place_holder.class
+
 user_input = []
+
 until user_input == word
 	puts "please enter a letter"
 	letter = gets.chomp
 	i = 0
 		until i > word.length			
 		if word[i] == letter			
-			user_input[i] = word[i]			
+			user_input[i] = word[i]	
+			puts "#{user_input}"		
 		else
-			puts "#{user_input}"
+			p word
 		end
 		i += 1
 	end
