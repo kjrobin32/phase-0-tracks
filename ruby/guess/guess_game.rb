@@ -22,30 +22,43 @@ end
 when finished put "good job"	
 =end
 
-word = "hat".chars
-p word
-word_holder = word
 
-place_holder = word_holder.fill("_")
-p word
-p word_holder
-p place_holder
-p place_holder.class
+=begin
+this would be is user input was used
+new_word = gets.chomp
+word = new_word.chars
+holder = new_word.chars
+=end
 
-user_input = []
+word = "chat".chars
+holder ="chat".chars
+
+
+# holder = holder.fill("_")
+
+# p word
+# word_holder = word
+
+# place_holder = word_holder.fill("_")
+# p word
+# p word_holder
+# p place_holder
+# p place_holder.class
+
+user_input = holder.fill("_")
 
 until user_input == word
 	puts "please enter a letter"
 	letter = gets.chomp
 	i = 0
-		until i > word.length			
+		while i < word.length			
 		if word[i] == letter			
 			user_input[i] = word[i]	
-			puts "#{user_input}"		
-		else
-			p word
+			else			
 		end
 		i += 1
-	end
+	end	
+	puts "#{user_input}"
 end
-# word.each {|x| x = letter}
+
+puts "Good job!"
