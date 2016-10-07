@@ -29,40 +29,78 @@ class GuessGame
 def initialize(first_user_word)
 	@first_user_word = first_user_word
 	@second_user_word = first_user_word
-	@user_input = first_user_word.fill("_")
+	# @user_input = first_user_word.fill("_")
 	@count = 0
-	@guesses = 4	
+	@guesses = first_user_word.length	
 	end
 
-def empty_word(second_user_word)
-	@second_user_word = second_user_word.fill("_")
+def empty_word(first_user_word)
+	@second_user_word = first_user_word.fill("_")
 	end
 
-def guesses(count, guesses)			
-		until count > guesses
-		count += 1
-		return guesses	
-		end		
+# def guesses(count, guesses)			
+# 		until count > guesses
+# 		count += 1
+# 		return guesses	
+# 		end
+def letter_checker(second_user_word, letter)
+	until second_user_word == first_user_word
+	i = 0
+		while i < first_user_word.length			
+		if first_user_word[i] == letter			
+			second_user_word[i] = first_user_word[i]	
+			else			
+		end
+		i += 1
+		end					
 	end
+
 end
-first_user_word = "chat"
-gamer = GuessGame.new((first_user_word.chars))
-p gamer.empty_word(first_user_word.chars)
+puts "First player. please enter a word."
+first_user_word = gets.chomp
+game = GuessGame.new((first_user_word.chars))
+second_user_word = nil
+game.empty_word(first_user_word.chars)
+puts "enter a letter to guess the word."
+letter = gets.chomp	
+# if the oupt ot hit letter metts this criter is goes here
+
+	
+end
+
+# count = 0
+
+# guesses = first_user_word.length
 
 
 
-	# def letter_checker(word)
-	# i = 0
-	# 	while i < word.length			
-	# 	if word[i] == letter			
-	# 		user_input[i] = word[i]	
-	# 		else			
-	# 	end
-	# 	i += 1
-	# 	end	
+
+
+# p game.empty_word(first_user_word.chars)
+# puts "Please enter a letter for a guess?"
+
+
+# until letter != letter
+# letter = gets.chomp
+# guess_count = 0
+# 	if 
+# 	guess_count = letter.to_i
+# 		puts "try agin"
+# 	end
+
+
+
+
+
 	# puts "#{user_input}"	
 
-# end
+# p gamer.guesses(count, guesses)
+
+
+
+
+	
+
 
 
 
