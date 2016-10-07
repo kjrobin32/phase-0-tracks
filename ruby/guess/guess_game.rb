@@ -29,36 +29,30 @@ new_word = gets.chomp
 word = new_word.chars
 holder = new_word.chars
 =end
-
-word = "chat".chars
-holder ="chat".chars
-
-
-# holder = holder.fill("_")
-
-# p word
-# word_holder = word
-
-# place_holder = word_holder.fill("_")
-# p word
-# p word_holder
-# p place_holder
-# p place_holder.class
-
-user_input = holder.fill("_")
-
-until user_input == word
-	puts "please enter a letter"
-	letter = gets.chomp
-	i = 0
-		while i < word.length			
-		if word[i] == letter			
-			user_input[i] = word[i]	
-			else			
-		end
-		i += 1
-	end	
-	puts "#{user_input}"
+class GuessGame
+	def initialize(holder)
+	@word = "chat".chars
+	@holder = "chat".chars	
+	end
+	def input(holder)
+	@holder = holder.fill("_")
+	end
 end
 
-puts "Good job!"
+
+
+# until user_input == word
+# 	puts "please enter a letter"
+# 	letter = gets.chomp
+# 	i = 0
+# 		while i < word.length			
+# 		if word[i] == letter			
+# 			user_input[i] = word[i]	
+# 			else			
+# 		end
+# 		i += 1
+# 	end	
+# 	puts "#{user_input}"
+# end
+
+# puts "Good job!"
