@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 =begin
 please enter a word
 
@@ -30,29 +22,57 @@ word = new_word.chars
 holder = new_word.chars
 =end
 class GuessGame
-	def initialize(holder)
-	@word = "chat".chars
-	@holder = "chat".chars	
+	attr_reader :letter
+	attr_reader :user_input
+	attr_reader :guesses
+	attr_reader :count
+def initialize(first_user_word)
+	@first_user_word = first_user_word
+	@second_user_word = first_user_word
+	@user_input = first_user_word.fill("_")
+	@count = 0
+	@guesses = 4	
 	end
-	def input(holder)
-	@holder = holder.fill("_")
+
+def empty_word(second_user_word)
+	@second_user_word = second_user_word.fill("_")
+	end
+
+def guesses(count, guesses)			
+		until count > guesses
+		count += 1
+		return guesses	
+		end		
 	end
 end
+first_user_word = "chat"
+gamer = GuessGame.new((first_user_word.chars))
+p gamer.empty_word(first_user_word.chars)
+
+
+
+	# def letter_checker(word)
+	# i = 0
+	# 	while i < word.length			
+	# 	if word[i] == letter			
+	# 		user_input[i] = word[i]	
+	# 		else			
+	# 	end
+	# 	i += 1
+	# 	end	
+	# puts "#{user_input}"	
+
+# end
+
 
 
 
 # until user_input == word
 # 	puts "please enter a letter"
-# 	letter = gets.chomp
-# 	i = 0
-# 		while i < word.length			
-# 		if word[i] == letter			
-# 			user_input[i] = word[i]	
-# 			else			
-# 		end
-# 		i += 1
-# 	end	
-# 	puts "#{user_input}"
+# 	letter = gets.chomp	
+
 # end
 
 # puts "Good job!"
+
+# if user_input == word
