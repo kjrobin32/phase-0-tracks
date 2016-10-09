@@ -6,17 +6,9 @@ describe GuessGame do
 		game.take_letter"l"
 		expect{game.take_letter"l"}.not_to change {game.attempt_counter}
 	end
-	it "has less attempts less than the length of the word" do
-		expect(game.attempts_count?(3)).to <  4
-	end
-	it "if the guess is the same it does not count" do
-		expect(game.guess_count(10)).to eq 10
-	end
-	it "has less attempts than the length of the word" do
-		expect(game.guess_letter?(l)).to eq "L", "_", "E"
-	end
-	it " puts good job" do
-		expect (game.over(word)).to eq "Good Job"
+	it "should expect the game board to equal word or the attempt counter to be less than the word length +7" do
+		game.attempt_counter = 11
+		expect(game.gameover?).to eq true
 	end
 end
 

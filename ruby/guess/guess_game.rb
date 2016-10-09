@@ -98,7 +98,7 @@ if the letter matches the word the array is updated with the letter and put on t
 =end
 
 class GuessGame 
-	attr_reader :attempt_counter
+	attr_accessor :attempt_counter
 	def initialize(word)
 		@word = word
 		@attempt_counter = 0
@@ -106,19 +106,32 @@ class GuessGame
 		@guessed_letters = []
 	end
 	def take_letter(letter)
-		if @guessed_letters.index(letter) != nil
+		if @guessed_letters.index(letter) == nil
 			if @word.index(letter) != nil
-				@game_board[@word.index(letter)] = letter
-				@guessed_letters << letter	
+				@game_board[@word.index(letter)] = letter	
 			end	
+			@guessed_letters << letter
 			@attempt_counter += 1 
 		end
+		puts @game_board
 	end
 	def run_game
-		until attempt_counter == word.length + 7
+		until gameover?
 			puts "Give me a letter"
 			letter = gets.chomp
+			take_letter(letter)
 		end
-
+		if @game_board == @word
+			puts "Good job you save man from a lynchin!"
+		else
+			puts "You hung a man... how retro!"
+		end
+	end
+	def gameover?
+		(@game_board == @word) || (@attempt_counter == @word.length + 7)
 	end
 end
+# puts "What is your word for hangman?"
+# word = gets.chomp
+# game = GuessGame.new(word)
+# game.run_game
