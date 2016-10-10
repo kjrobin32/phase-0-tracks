@@ -1,6 +1,8 @@
 #population density is number of people per square mile as of 2012
 #this data is updated every year with estimates from a 10 year census
-
+=begin
+  The state data hash has of the states with has population and population density as a hash.  State data is a global variable
+=end
 
 STATE_DATA = {
   "Alabama" => {population_density: 94.65, population: 4822023},
