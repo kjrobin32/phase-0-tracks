@@ -98,3 +98,6 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+# The constant parent hash uses the rocket operator to assign values.  The child hashed use symbols as keys to assign values without the rocket operator.
+#A private method cannot use the object of another method to run.  
+# hashes can be itirated by using .each or .map.
