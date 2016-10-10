@@ -3,9 +3,7 @@
 // put each item input into the array
 // use the method to scan over each chacter for it value in each array until the greatest amount of strings is found
 // reutrn the values of the longets array 
-//  
 
-//
 function compare(phrases){
 	// var phrases = [];
 	var longWord = "";

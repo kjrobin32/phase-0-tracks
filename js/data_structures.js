@@ -1,6 +1,6 @@
 var colors = ["maize", "blue", "white", "gray"];
 
-var names = ["Gomer", "Bert", "Jesse", "Kaileigh"];
+var names = ["Gomer", "Bert", "Jesse", "Patches"];
 
 colors.push("green")
 
