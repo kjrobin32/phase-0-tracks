@@ -8,6 +8,17 @@ revWord = ""
 return revWord
 }
 
-console.log(reverse("hello"))
+
+
+str = "hat"
+if (reverse(str) == str) {
+	console.log("paligrown")}
+else 
+{console.log(revWord)}
+
+var basic_equation = 1 + 2
+
+if (basic_equation)
+{console.log(revWord)}
 
 
