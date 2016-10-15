@@ -1,0 +1,15 @@
+SELECT * FROM sodas;
+UPDATE brands SET Brands="Dr Pepper/ Snapple" WHERE id=3;
+SELECT * FROM sodas, brands WHERE sodas.Brand = brands.id;
+SELECT Name, Brands FROM sodas, brands WHERE sodas.Brand = brands.id;
+DELETE FROM sodas Where Sales > 37;
+
+SELECT Name, Sales, Brands FROM sodas CROSS JOIN Brands;
+sqlite> SELECT Name, Sales, Brands FROM sodas CROSS JOIN Brands;
+Mountian Dew|35|Coca-cola
+Mountian Dew|35|Pepsi
+Mountian Dew|35|Dr Pepper/ Snapple
+Dr Pepper|31|Coca-cola
+Dr Pepper|31|Pepsi
+Dr Pepper|31|Dr Pepper/ Snapple
+sqlite>
