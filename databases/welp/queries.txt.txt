@@ -1,0 +1,14 @@
+ SELECT users.first_name, Business.name, reviews.stars FROM reviews JOIN Users ON reviews.User_id=users.id JOIN Business ON reviews.business_id=Business.id;
+Angela|Grundy Hollow Wedding Chapel|1
+Bradford|Amir's Towing|4
+Mandy|The Beagle Nightclub|5
+
+
+ SELECT users.first_name, users.last_name, Business.name, reviews.stars, reviews.comment FROM reviews JOIN Users ON reviews.user_id=Users.id JOIN Business ON reviews.business_id=Business.id;
+Angela|Jolie|Grundy Hollow Wedding Chapel|1|not crunk
+Bradford|Pitt|Amir's Towing|4|Atleast they did not scratch my 22's
+Mandy|Kailing|The Beagle Nightclub|5|So crunk!
+
+
+ SELECT * FROM reviews JOIN Business ON reviews.business_id=Business.id JOIN Users ON reviews.user_id=Users.id WHERE Business.name="The Beagle Nightclub";
+3|5|So crunk!|3|2|3|The Beagle Nightclub|2|Mandy|Kailing
