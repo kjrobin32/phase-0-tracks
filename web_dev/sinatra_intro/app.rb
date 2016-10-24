@@ -8,6 +8,18 @@ db.results_as_hash = true
 # write a basic GET route
 # add a query parameter
 # GET /
+get '/contact' do
+  "878 hat street"
+end
+
+get '/great job' do
+  if name = [:name]
+    "Good job, #{name}"
+  else
+    "Good job!"
+end
+
+
 get '/' do
   "#{params[:name]} is #{params[:age]} years old."
 end
